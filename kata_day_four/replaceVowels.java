@@ -14,4 +14,8 @@ public class Solution {
 
         return a; //coding and coding....
     }
+
+     public static String replace2(final String s) {
+        return s.replaceAll("[aeiouAEIOU]", "!");
+    }
 }
