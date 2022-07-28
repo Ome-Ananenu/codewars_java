@@ -17,3 +17,25 @@ public class JadenCase {
   }
 
 }
+public class JadenCase {
+
+	public String toJadenCase(String phrase) {
+    if(phrase == null || phrase ==""){
+      return null;
+    }
+
+    String newStr = "";
+		// TODO put your code below this comment
+		for(int i=0; i<phrase.length(); i++){
+      if(i == 0 || phrase.charAt(i - 1) == ' ' && phrase.charAt(i) != Character.toUpperCase(phrase.charAt(i)) ){
+        newStr += Character.toUpperCase(phrase.charAt(i));
+      }
+      else{
+        newStr += phrase.charAt(i);
+      }
+    }
+
+		return newStr;
+	}
+
+}
