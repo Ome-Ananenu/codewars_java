@@ -1,15 +1,13 @@
 public class Printer {
     
     public static String printerError(String s) {
-      String right = "abcdefghijklm";
-      int count = 0;
-      String ans = String.format("%s/%s",count,s.length());
-      
-      for(int i=0; i<s.length(); i++){
-        if(!right.contains(s.indexOf(i))){
-          count++;
+        int bad = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (!"abcdefghijklm".contains(Character.toString(s.charAt(i)))){
+                bad++;
+            }
         }
-      }
-        // your code
+        return "" + bad + "/" + s.length();
     }
 }
