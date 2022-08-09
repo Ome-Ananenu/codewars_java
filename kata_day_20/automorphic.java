@@ -8,3 +8,9 @@ public class Solution
           ||Math.abs(number * number) % 10000 == number?"Automorphic":"Not!!";
     }
 }
+
+class Solution {
+  static String autoMorphic(int number) {
+    return (number * number + "").endsWith(number + "") ? "Automorphic" : "Not!!";
+  }
+}
