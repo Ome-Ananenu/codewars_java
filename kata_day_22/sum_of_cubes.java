@@ -6,7 +6,7 @@ public class Solution{
     long ans = 0;
     
     for(long i=1; i<= n; i++){
-      ans += Math.pow(i,3);
+      ans += (long)Math.pow(i,3);
     }
     return ans;
   }
