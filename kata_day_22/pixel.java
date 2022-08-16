@@ -5,3 +5,11 @@ public class Kata {
   }
 
 }
+
+public class Kata {
+
+  public static boolean isDivisible(int w, int p) {
+    return w%p==0;
+  }
+
+}
