@@ -23,4 +23,4 @@ public class Movie {
         } while (systemA <= Math.ceil(systemB));
 
         return numberOfVisits;
-    
+    }
