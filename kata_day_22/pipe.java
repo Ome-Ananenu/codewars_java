@@ -9,3 +9,4 @@ public class Kata {
     }
     return result;
   }
+}
